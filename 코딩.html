@@ -26,6 +26,43 @@
                 #container{width: 85%;
                 height: 70%;
                 float: right;}
+                #container ul:active{display: none;}
+                #container div{
+                    width: 100px;
+                    height: 100px;
+                    background-color: chartreuse;
+                    position: relative;
+                    animation-name: example ;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                }
+                @keyframes example {
+                  0% {
+                      background-color: red;
+                      left:0px ;
+                      top:0px ;
+                  }  
+                  25%{
+                      background-color: yellow;
+                      left: 500px;
+                      top:0px ;
+                  }
+                  50%{
+                      background-color: black;
+                      left: 1000px;
+                      top: 0px;
+                  }
+                  75%{
+                      background-color: blue;
+                      left: 500px;
+                      top: 0px;
+                  }
+                  100%{
+                      background-color: chocolate;
+                      left: 0px;
+                      top: 0px;
+                  }
+                }
     </style>
 </head>
 <body>
@@ -49,6 +86,8 @@
                         <li>생일:2005 10 18</li>
                         <li>희망학과:수학교육과</li>
                     </ul>
+                    <hr>
+                    <div></div>
                     <p>방문객들에게 한마디!</p>
                     <p>안녕하세요! 임채완입니다</p>
                 </div>
